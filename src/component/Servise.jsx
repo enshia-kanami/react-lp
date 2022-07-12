@@ -1,7 +1,7 @@
 function Servise() {
     return(
         <service>
-            <h3 className="text-center m-8 text-2xl">Servise</h3>
+            <h3 className="text-center m-14 text-4xl">Servise</h3>
                 <div className="flex justify-between ">
                     <div className="bg-orange-200 rounded drop-shadow-md mb-3 w-1/4 p-3">
                         <h4>Sales</h4>

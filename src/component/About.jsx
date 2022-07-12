@@ -1,7 +1,7 @@
 function About() {
     return(
         <about>
-            <h3 className="text-center m-8 text-2xl">About</h3>
+            <h3 className="text-center m-14 text-3xl">About</h3>
                 <div className="flex justify-center">
                     <div className="p-5 bg-orange-100 w-1/3">
                        <p>img</p>

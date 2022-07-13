@@ -1,6 +1,6 @@
-import React from "react";
-import AboutContent from "./AboutContent";
-import AboutImg from "./AboutImg";
+import React from 'react';
+import AboutContent from './AboutContent';
+import AboutImg from './AboutImg';
 
 function About() {
     return(
@@ -27,16 +27,10 @@ function About() {
                 <div className="flex justify-center mt-5">
                     <AboutImg/>
                     <div className="p-5 bg-white w-1/3">
-                        <h4>
                         <AboutContent
                          aboutTitle={'hoge3'}
-                         />
-                        </h4>
-                        <p>
-                        <AboutContent
                          aboutText={'texttexttexttexttexttexttexttext'}
                         />
-                        </p>
                     </div>
                 </div>
         </about>

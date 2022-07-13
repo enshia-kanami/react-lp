@@ -1,15 +1,17 @@
-import React from "react";
+import { Link } from 'react-router-dom';
 
-const Nav = (props) => {
+function Nav() {
     return (
+        <div>
         <nav>
-            <ul className="flex">
-                <li><a href="#" className="block py-6 px-4">Home</a></li>
-                <li><a href="#" className="block py-6 px-4">About</a></li>
-                <li><a href="#" className="block py-6 px-4">Servise</a></li>
-                <li><a href="#" className="block py-6 px-4">Contact</a></li>
+            <ul>
+                <li><Link to="/" className="block py-6 px-4">Home</Link></li>
+                <li><Link to="/about" className="block py-6 px-4">About</Link></li>
+                <li><Link to="/servise" className="block py-6 px-4">Servise</Link></li>
+                <li><Link to="/contact" className="block py-6 px-4">Contact</Link></li>
             </ul>
         </nav>
+        </div>
     )
 }
 

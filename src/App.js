@@ -1,19 +1,16 @@
-// import Compiles from "./component/Compiles";
-import {Header, Main, About, Servise, Contact, Button, Footer} from './component/index';
+import React from 'react';
+import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
+import Compiles from "./routes/Compiles";
+import Header from "./routes/Header";
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Main/>
-      <div className='m-10'>
-        <About/>
-        <Servise/>
-        <Contact/>
-        <Footer/>
-        {/* <Compiles/> */}
+      <div className='App'>
+        <Routes>
+          <Route path='/' element={<Header />} />
+
+        </Routes>
       </div>
-    </div>
   );
 }
 

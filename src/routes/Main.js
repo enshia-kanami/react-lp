@@ -1,3 +1,5 @@
+import React from "react";
+
 function Main() {
     return(
         <main className="mb-5 bg-orange-200">

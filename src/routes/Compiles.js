@@ -1,3 +1,5 @@
+import React  from "react"
+
 function Compiles() {
     return (
         <div className="text-base bg-slate-50">

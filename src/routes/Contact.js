@@ -1,3 +1,6 @@
+import React from "react";
+import Button from "./Button"; 
+
 function Contact() {
     return (
         <contact className="bg-slate-200">
@@ -17,7 +20,9 @@ function Contact() {
                                 <textarea className="bg-gray-100" placeholder="text"></textarea>
                             </div>
                             <div className="md:items-center text-center">
-                                <button className="w-1/6 bg-orange-300 text-white rounded drop-shadow-md m-3 p-2" type="submit">Send request</button>
+                                <Button
+                                buttonType={"Send request"}
+                                />
                             </div>
                         </form>
                 </div>
@@ -25,4 +30,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact;

@@ -1,9 +1,29 @@
 import React  from "react"
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Header from "./Header";
+import Nav from "./Nav";
+import Main from "./Main";
+import About from "./About";
+import AboutContent from "./AboutContent";
+import AboutImg from "./AboutImg";
+import Contact from "./Contact";
+import Servise from "./Servise";
+import ServiseItems from "./ServiseItems";
+import Footer from "./Footer";
 
 function Compiles() {
     return (
         <div className="text-base bg-slate-50">
+            {/* <Header/>
+            <Nav/>
+            <Main/>
+            <About/>
+            <AboutImg/>
+            <AboutContent/>
+            <Servise/>
+            <ServiseItems/>
+            <Contact/> 
+            <Footer/> */}
             <header className="relative bg-white drop-shadow-md ...">
                 <div className="flex justify-between items-center pt-0 pb-0">
                     <a href="#" className="font-normal text-xl">Hoge</a>
@@ -107,4 +127,4 @@ function Compiles() {
     )
 }
 
-export default Compiles
+export default Compiles;

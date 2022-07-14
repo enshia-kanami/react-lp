@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, AboutContent, AboutImg, Footer} from "./index";
+import { Header, AboutContent, AboutImg, Footer} from "../index";
 
 function About() {
     return(

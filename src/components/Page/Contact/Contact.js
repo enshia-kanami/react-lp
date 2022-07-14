@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Button, Header, Footer} from "./index"
+import { Button, Header, Footer} from "../index"
 
 function Contact() {
     const initialVlues = {userName: "", userEmail: ""}//フォームが３つだから、配列で１つに管理

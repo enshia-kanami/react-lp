@@ -40,10 +40,10 @@ function Compiles() {
     return (
         <div className="text-base bg-slate-50">
             <header className="relative bg-white drop-shadow-md ...">
-                <div className="flex justify-between items-center pt-0 pb-0">
-                    <a href="#" className="font-normal text-xl">Hoge</a>
+                <div className="sm:flex justify-between items-center pt-0 pb-0">
+                    <a href="#" className="font-normal text-xl pl-8 hidden sm:block">Hoge</a>
                     <nav>
-                        <ul className="flex">
+                        <ul className="flex justify-center">
                             <li><Link to="/" className="block py-6 px-4">Home</Link></li>
                             <li><Link to="/about" className="block py-6 px-4">About</Link></li>
                             <li><Link to="/servise" className="block py-6 px-4">Servise</Link></li>
@@ -54,9 +54,9 @@ function Compiles() {
             </header>
             <main className="mb-5 bg-orange-200">
                 <h2 className="text-4xl p-8">Hoge Hoge</h2>
-                <p className="text-2xl pb-8">hogehogehogehogehogehogehoge</p>
+                <p className="text-2xl pb-8 pl-8 break-words whitespace-pre-wrap">hogehogehogehogehogehogehoge</p>
             </main>
-            <div className="mx-8">
+            <div className="mx-5 sm:mx-8">
             <about>
             <h3 className="text-center m-14 text-3xl">About</h3>
                 <div className="flex justify-center">
@@ -89,23 +89,23 @@ function Compiles() {
             </about>
             <service>
                 <h3 className="text-center m-8 text-3xl">Servise</h3>
-                <div className="flex justify-between ">
-                    <div className="bg-orange-200 rounded drop-shadow-md mb-3 w-1/4 p-3">
+                <div className="sm:flex justify-between ">
+                    <div className="bg-orange-200 rounded drop-shadow-md mb-3 sm:w-1/4 p-3">
                         <h4>Sales</h4>
                         <p className="break-words whitespace-pre-wrap">texttexttexttexttexttexttexttexttexttexttexttext</p>
                     </div>
-                    <div className="bg-orange-200 rounded drop-shadow-md mb-3 w-1/4 p-3">
+                    <div className="bg-orange-200 rounded drop-shadow-md mb-3 sm:w-1/4 p-3">
                         <h4>Consulting</h4>
                         <p className="break-words whitespace-pre-wrap">texttexttexttexttexttexttexttexttexttexttexttext</p>
                     </div>
-                    <div className="bg-orange-200 rounded drop-shadow-md mb-3 w-1/4 p-3">
+                    <div className="bg-orange-200 rounded drop-shadow-md mb-3 sm:w-1/4 p-3">
                         <h4>OfficeWork</h4>
                         <p className="break-words whitespace-pre-wrap">texttexttexttexttexttexttexttexttexttexttexttext</p>
                     </div>
                 </div>
             </service>
             <contact className="bg-slate-200">
-                <div className="rounded-lg w-3/5 max-w-md my-14 mr-auto ml-auto shadow-xl bg-white p-3">
+                <div className="rounded-lg sm:w-3/5 max-w-md my-14 mr-auto ml-auto shadow-xl bg-white p-3">
                     <h3 className="text-center m-6 text-3xl">Contact</h3>
                         <form onSubmit={(e) => handleSubmit(e)}>
                             <div className="mb-2 text-center">

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Button from "./Button"; 
+import { Button, Header, Footer} from "./index"
 
 function Contact() {
     const initialVlues = {userName: "", userEmail: ""}//フォームが３つだから、配列で１つに管理
@@ -39,7 +39,9 @@ function Contact() {
     }
 
     return (
-        <contact className="bg-slate-200">
+        <div>
+            <Header/>
+            <contact className="bg-slate-200">
                 <div className="rounded-lg w-3/5 max-w-md my-14 mr-auto ml-auto shadow-xl bg-white p-3">
                     <h3 className="text-center m-6 text-4xl">Contact</h3>
                         <form onSubmit={(e) => handleSubmit(e)}>
@@ -47,17 +49,17 @@ function Contact() {
                                 <label className="text-left w-3/12 inline-block">Name:</label>
                                 <input className="bg-gray-100" type="text" placeholder= "hoge" name="userName" onChange={(e) => handleChange(e)}></input> {/*文字を格納*/}
                             </div>
-                            <p className="text-red-600 text-xs">{formErrors.userName}</p>
+                                <p className="text-red-600 text-xs">{formErrors.userName}</p>
                             <div className="mb-2 text-center">
                                 <label className="text-left w-3/12 inline-block">Email:</label>
                                 <input className="bg-gray-100" type="email" placeholder= "hoge@hoge" name="userEmail" onChange={(e) => handleChange(e)}></input>
                             </div>
-                            <p className="text-red-600 text-xs">{formErrors.userEmail}</p>
+                                <p className="text-red-600 text-xs">{formErrors.userEmail}</p>
                             <div className="mb-2 text-center">
                                 <label className="items-start text-left  align-top w-3/12 inline-block">Contact:</label>
                                 <textarea className="bg-gray-100" placeholder="text" tepe="textarea" ></textarea>
                             </div>
-                            <div className="md:items-center text-center">
+                                <div className="md:items-center text-center">
                                 <Button
                                 buttonType={"SendRequest"}
                                 />
@@ -67,7 +69,10 @@ function Contact() {
                             </div>
                         </form>
                 </div>
-        </contact>
+            </contact>
+            <Footer/>
+        </div>
+            
     )
 }
 

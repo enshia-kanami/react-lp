@@ -1,9 +1,10 @@
 import React from 'react';
-import AboutContent from './AboutContent';
-import AboutImg from './AboutImg';
+import { Header, AboutContent, AboutImg, Footer} from "./index";
 
 function About() {
     return(
+        <div>
+        <Header/>
         <about>
             <h3 className="text-center m-14 text-3xl">About</h3>
                 <div className="flex justify-center">
@@ -34,6 +35,8 @@ function About() {
                     </div>
                 </div>
         </about>
+        <Footer/>
+        </div>
     )
 }
 

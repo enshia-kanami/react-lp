@@ -1,15 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import Home from './routes/Home';
-import About from './routes/About';
-import Header from './routes/Header';
-import Servise from './routes/Servise';
-import Contact from './routes/Contact';
+import { Home, About, Header, Servise, Contact} from "./routes/index"
 
 
 function App() {
   return (
-      <div className='App'>
+      <div className='min-h-screen relative'>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />

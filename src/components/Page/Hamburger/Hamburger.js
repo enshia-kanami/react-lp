@@ -27,8 +27,8 @@ function Hamburger (props) {
             <nav className="bg-white">
               <ul>
                 <li><Link to="/" className="block pt-7 pb-4 px-6">Home</Link></li>
-                <li><Link to="/about" className="block py-4 px-6">About</Link></li>
-                <li><Link to="/servise" className="block py-4 px-6">Servise</Link></li>
+                <li><Link to="/aboutdetail" className="block py-4 px-6">About</Link></li>
+                <li><Link to="/service" className="block py-4 px-6">Service</Link></li>
                 <li><Link to="/contact" className="block py-4 px-6">Contact</Link></li>
               </ul>
             </nav>
@@ -40,4 +40,3 @@ function Hamburger (props) {
   }
 
   export default Hamburger;
-  

@@ -1,7 +1,8 @@
 import React  from "react"
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Hamburger from "./Hamburger/Hamburger";
+import Hamburger from "../Hamburger/Hamburger";
+import SimpleSlider from "../Main/SimpleSlider";
 
 function Compiles() {
     //お問合せ
@@ -47,7 +48,7 @@ function Compiles() {
                     <nav className="bg-white hidden">
                         <ul className="sm:flex sm:justify-center block">
                             <li><Link to="/" className="block py-6 px-4">Home</Link></li>
-                            <li><Link to="/about" className="block py-6 px-4">About</Link></li>
+                            <li><Link to="/aboutdetail" className="block py-6 px-4">About</Link></li>
                             <li><Link to="/servise" className="block py-6 px-4">Servise</Link></li>
                             <li><Link to="/contact" className="block py-6 px-4">Contact</Link></li>
                         </ul>
@@ -55,9 +56,12 @@ function Compiles() {
                     <Hamburger/>
                 </div>
             </header>
-            <main className="mb-5 bg-orange-200 mt-[72px]">
+            {/* <main className="mb-5 bg-orange-200 mt-[72px]">
                 <h2 className="text-4xl p-8">Hoge Hoge</h2>
                 <p className="text-2xl pb-8 pl-8 break-words whitespace-pre-wrap">hogehogehogehogehogehogehoge</p>
+            </main> */}
+            <main className="mt-[72px]">
+                <SimpleSlider/>
             </main>
             <div className="mx-5 sm:mx-10">
             <about>
@@ -91,7 +95,7 @@ function Compiles() {
                 </div>
             </about>
             <service>
-                <h3 className="text-center m-14 text-3xl">Servise</h3>
+                <h3 className="text-center m-14 text-3xl">Service</h3>
                 <div className="sm:flex justify-around ">
                     <div className="bg-orange-200 rounded drop-shadow-md mb-3 sm:w-1/4 p-3">
                         <h4 className="text-xl font-semibold">Sales</h4>
@@ -107,7 +111,7 @@ function Compiles() {
                     </div>
                 </div>
             </service>
-            <news>
+            {/* <news>
                 <h3 className="text-center m-14 text-3xl">News</h3>
                 <ul>
                     <li>
@@ -135,7 +139,7 @@ function Compiles() {
                         </link>
                     </li>
                 </ul>
-            </news>
+            </news> */}
             <contact className="bg-slate-200">
                 <div className="rounded-lg sm:w-3/5 max-w-md my-14 mr-auto ml-auto shadow-xl bg-white p-3">
                     <h3 className="text-center m-6 text-3xl">Contact</h3>

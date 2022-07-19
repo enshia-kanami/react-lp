@@ -42,24 +42,49 @@ function Compiles() {
 
     return (
         <div className="text-base bg-slate-50">
-            <header className="top-0 fixed w-full bg-white drop-shadow-md ...">
+            <header className="top-0 fixed z-50 w-full bg-white drop-shadow-md ...">
                 <div className="sm:flex justify-between items-center pt-0 pb-0">
                     <a href="#" className="font-normal text-xl pl-8 hidden sm:block">Hoge</a>
-                    <nav className="bg-white hidden">
-                        <ul className="sm:flex sm:justify-center block">
-                            <li><Link to="/" className="block py-6 px-4">Home</Link></li>
-                            <li><Link to="/aboutdetail" className="block py-6 px-4">About</Link></li>
-                            <li><Link to="/servise" className="block py-6 px-4">Servise</Link></li>
-                            <li><Link to="/contact" className="block py-6 px-4">Contact</Link></li>
+                    <nav className="bg-white">
+                        {/* <ul className="sm:flex sm:justify-center block"> */}
+                        <ul className="flex justify-center">
+                            <li className="relative group hover:bg-sky-100">
+                                <Link to="/" className="block py-6 px-4">Home</Link>
+                                <ul className="absolute invisible group-hover:visible bg-sky-50">
+                                    <li className="px-3 py-3 z-40"><Link to="">Home1</Link></li>
+                                    <li className="px-3 py-3"><Link to="">Home2</Link></li>
+                                    <li className="px-3 py-3"><Link to="">Home3</Link></li>
+                                </ul>
+                            </li>
+                            <li className="relative group hover:bg-sky-100">
+                                <Link to="/aboutdetail" className="block py-6 px-4">About</Link>
+                                <ul className="absolute invisible group-hover:visible bg-sky-50">
+                                    <li className="px-3 py-3"><Link to="">About1</Link></li>
+                                    <li className="px-3 py-3"><Link to="">About2</Link></li>
+                                    <li className="px-3 py-3"><Link to="">About3</Link></li>
+                                </ul>
+                            </li>
+                            <li className="relative group hover:bg-sky-100">
+                                <Link to="/servise" className="block py-6 px-4">Servise</Link>
+                                <ul className="absolute invisible group-hover:visible bg-sky-50">
+                                    <li className="px-3 py-3"><Link to="">Servise1</Link></li>
+                                    <li className="px-3 py-3"><Link to="">Servise2</Link></li>
+                                    <li className="px-3 py-3"><Link to="">Servise3</Link></li>
+                                </ul>
+                            </li>
+                            <li className="relative group hover:bg-sky-100">
+                                <Link to="/contact" className="block py-6 px-4">Contact</Link>
+                                <ul className="absolute invisible group-hover:visible bg-sky-50"> 
+                                    <li className="px-3 py-3"><Link to="">Contact1</Link></li>
+                                    <li className="px-3 py-3"><Link to="">Contact2</Link></li>
+                                    <li className="px-3 py-3"><Link to="">Contact3</Link></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
-                    <Hamburger/>
+                    {/* <Hamburger/> */}
                 </div>
             </header>
-            {/* <main className="mb-5 bg-orange-200 mt-[72px]">
-                <h2 className="text-4xl p-8">Hoge Hoge</h2>
-                <p className="text-2xl pb-8 pl-8 break-words whitespace-pre-wrap">hogehogehogehogehogehogehoge</p>
-            </main> */}
             <main className="mt-[72px]">
                 <SimpleSlider/>
             </main>

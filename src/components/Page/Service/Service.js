@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, ServiceItems, Footer } from "../index";
+import { Header, ServiceItems, Footer } from "../Footer/index";
 
 function Service() {
     return(

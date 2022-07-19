@@ -11,7 +11,9 @@ function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    adaptiveHeight: false
+    adaptiveHeight: false,
+    dots: false,
+    arrows: false
   };
 
   const images = [

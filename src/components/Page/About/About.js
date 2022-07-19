@@ -6,7 +6,7 @@ function About() {
         <div>
         <Header/>
         <about>
-            <h3 className="text-center m-14 text-3xl">About</h3>
+            <h3 className="text-center m-14 text-3xl">Company info</h3>
                 <div className="flex justify-center">
                     <AboutImg/>
                     <div className="p-5 bg-white w-1/3"> 

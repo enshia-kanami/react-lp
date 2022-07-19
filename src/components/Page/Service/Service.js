@@ -1,28 +1,12 @@
 import React from "react";
-import { Header, ServiceItems, Footer } from "../Footer/index";
+import { Link } from "react-router-dom";
 
 function Service() {
     return(
-        <div>
-            <Header/>
-            <service>
-                <h3 className="text-center m-14 text-4xl">Service</h3>
-                    <div className="flex justify-between ">
-                        <ServiceItems
-                        serviceTitle={'Salse'}
-                        serviceText={'texttexttexttexttexttexttexttext'}
-                        />
-                        <ServiceItems
-                        serviceTitle={'Consulting'}
-                        serviceText={'texttexttexttexttexttexttexttext'}
-                        />
-                        <ServiceItems
-                        serviceTitle={'OfficeWorck'}
-                        serviceText={'texttexttexttexttexttexttexttext'}
-                        />
-                    </div>
-            </service>
-            <Footer/>
+        <div className="m-auto w-3/4 sm:w-full">
+            <h3 className="mt-14 mb-4 mr-6 text-3xl font-bold">Service</h3>
+            <p>texttexttexttexttexttexttexttext</p>
+            <Link to="" className="text-sky-400 pt-4">詳細を見る</Link>
         </div>
     )
 }

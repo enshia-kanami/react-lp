@@ -8,10 +8,6 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
-            {/* <Route path='/header' element={<Header />} />
-            <Route path='/aboutDetail.js' element={<About />} />
-            <Route path='/service' element={<Service />} />
-            <Route path='/contact' element={<Contact />} /> */}
           </Routes>
         </BrowserRouter>
       </div>

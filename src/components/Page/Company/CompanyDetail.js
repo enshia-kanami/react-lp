@@ -1,6 +1,8 @@
 function CompanyInfoDetail () {
     return(
-        <p>詳細</p>
+        <div>
+            <p>詳細</p>
+        </div>
     )
 }
 

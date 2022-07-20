@@ -1,6 +1,8 @@
 function ServiceDetail() {
     return (
-        <p>serviceの詳細</p>
+        <div>
+            <p>serviceの詳細</p>
+        </div>
     )
 }
 export default ServiceDetail;

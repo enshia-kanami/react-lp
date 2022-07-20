@@ -1,2 +1,2 @@
-export { default as Service } from "./Service/Service";
-export { default as ServiceDetail} from "./Service/ServiceDetail";
+export { default as Service } from "./Service";
+export { default as ServiceDetail} from "./ServiceDetail";

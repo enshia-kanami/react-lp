@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import { Home } from "./components/Page/Home/index"
+import Home from "./components/Page/Home/Home";
 
 function App() {
   return (
+    <div className='App'>
       <div className='min-h-screen relative'>
         <BrowserRouter>
           <Routes>
@@ -11,6 +12,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
+    </div>
   );
 }
 

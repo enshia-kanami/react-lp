@@ -21,17 +21,19 @@ const Search = (props) => {
     }
 
     return(
-        <form className="search inline-flex items-center">
-            <input
-              value={searchValue}
-              onChange={handleSearchInputChanges}
-              type="text"
-              className="border-2 rounded border-slate-300"
-            />
-            <button onClick={callSearchFunction} type="submit" 
-            />
-            <span className="mx-3 "><FiSearch/></span>
-        </form>
+        <div>
+            <form className="search inline-flex items-center">
+                <input
+                value={searchValue}
+                onChange={handleSearchInputChanges}
+                type="text"
+                className="border-2 rounded border-slate-300"
+                />
+                <button onClick={callSearchFunction} type="submit" 
+                />
+                <span className="mx-3 "><FiSearch/></span>
+            </form>
+        </div>
     )
 }
 

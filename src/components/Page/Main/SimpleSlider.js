@@ -24,16 +24,18 @@ function SimpleSlider() {
   ]
 
   return (
-    <Slider {...settings}>
-      {images && images.map(image => {
-        return (
-          <div className="relative">
-            <img src={image.img} className="z-40 sm:h-[600px] w-full"/>
-            <p className="text-4xl sm:text-7xl font-bold text-white z-50 absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">Company</p>
-          </div>
-        )
-      })}
-    </Slider>
+    <main className="mt-[72px]">
+      <Slider {...settings}>
+        {images && images.map(image => {
+          return (
+            <div className="relative">
+              <img src={image.img} className="z-40 sm:h-[600px] w-full"/>
+              <p className="text-4xl sm:text-7xl font-bold text-white z-50 absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">Company</p>
+            </div>
+          )
+        })}
+      </Slider>
+    </main>
   );
 }
 

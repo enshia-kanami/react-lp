@@ -40,31 +40,33 @@ function Contact() {
 
     return (
         <div>
-            <div className="rounded-lg sm:w-3/5 max-w-md my-14 mr-auto ml-auto shadow-xl bg-white p-3">
-                <h3 className="text-center m-6 text-3xl">Contact</h3>
-                    <form onSubmit={(e) => handleSubmit(e)}>
-                        <div className="mb-2 text-center">
-                            <label className="text-left w-3/12 inline-block">Name:</label>
-                            <input className="bg-gray-100" type="text" placeholder= "hoge" name="userName" onChange={(e) => handleChange(e)}></input> {/*文字を格納*/}
-                        </div>
-                            <p className="text-red-600 text-xs">{formErrors.userName}</p>
-                        <div className="mb-2 text-center">
-                            <label className="text-left w-3/12 inline-block">Email:</label>
-                            <input className="bg-gray-100" type="email" placeholder= "hoge@hoge" name="userEmail" onChange={(e) => handleChange(e)}></input>
-                        </div>
-                            <p className="text-red-600 text-xs">{formErrors.userEmail}</p>
-                        <div className="mb-2 text-center">
-                            <label className="items-start text-left  align-top w-3/12 inline-block">Contact:</label>
-                            <textarea className="bg-gray-100" placeholder="text" tepe="textarea" ></textarea>
-                        </div>
-                            <div className="md:items-center text-center">
-                            <button className="w-1/3 bg-orange-300 text-white text-[12px] rounded drop-shadow-md m-3 p-2" type="submit">SendRequest</button>
-                                {Object.keys(formErrors).length === 0 && isSubmit && (
-                                    <div className="text-green-600">ログインに成功しました</div>
-                                )} {/*formErrorsの中にkeyの値が入っている。エラー文が何個入っているのか*/}
-                        </div>
-                    </form>
+           <contact className="bg-slate-200">
+                <div className="rounded-lg sm:w-3/5 max-w-md my-14 mr-auto ml-auto shadow-xl bg-white p-3">
+                    <h3 className="text-center m-6 text-3xl">Contact</h3>
+                        <form onSubmit={(e) => handleSubmit(e)}>
+                            <div className="mb-2 text-center">
+                                <label className="text-left w-3/12 inline-block">Name:</label>
+                                <input className="bg-gray-100" type="text" placeholder= "hoge" name="userName" onChange={(e) => handleChange(e)}></input> {/*文字を格納*/}
+                            </div>
+                                <p className="text-red-600 text-xs">{formErrors.userName}</p>
+                            <div className="mb-2 text-center">
+                                <label className="text-left w-3/12 inline-block">Email:</label>
+                                <input className="bg-gray-100" type="email" placeholder= "hoge@hoge" name="userEmail" onChange={(e) => handleChange(e)}></input>
+                            </div>
+                                <p className="text-red-600 text-xs">{formErrors.userEmail}</p>
+                            <div className="mb-2 text-center">
+                                <label className="items-start text-left  align-top w-3/12 inline-block">Contact:</label>
+                                <textarea className="bg-gray-100" placeholder="text" tepe="textarea" ></textarea>
+                            </div>
+                                <div className="md:items-center text-center">
+                                <button className="w-1/3 bg-orange-300 text-white text-[12px] rounded drop-shadow-md m-3 p-2" type="submit">SendRequest</button>
+                                    {Object.keys(formErrors).length === 0 && isSubmit && (
+                                        <div className="text-green-600">ログインに成功しました</div>
+                                    )} {/*formErrorsの中にkeyの値が入っている。エラー文が何個入っているのか*/}
+                            </div>
+                        </form>
                 </div>
+            </contact>
         </div>     
     )
 }

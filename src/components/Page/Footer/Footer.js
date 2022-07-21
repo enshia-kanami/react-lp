@@ -9,9 +9,9 @@ function Footer() {
                     <div>
                         <ul className="flex justify-center mb-5">
                             <li className="first:pl-0"><Link to="#">Home</Link></li>
-                            <li className="pl-3"><Link to="#">About</Link></li>
-                            <li className="pl-3"><Link to="#">News</Link></li>
-                            <li className="pl-3"><Link to="#">Contact</Link></li>
+                            <li className="pl-3"><Link to="../About/AboutDetail.js">About</Link></li>
+                            <li className="pl-3"><Link to="../News/NewsDetail.js">News</Link></li>
+                            <li className="pl-3"><Link to="../Contact/Contact.js">Contact</Link></li>
                         </ul>
                     </div>
                         <p className="py-2.5">&copy; 2022 React_LP</p>

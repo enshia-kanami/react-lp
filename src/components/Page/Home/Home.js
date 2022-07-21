@@ -14,7 +14,7 @@ function Home() {
                 <Header/>
                 <SimpleSlider/>
                 <div className="mx-5 sm:mx-10">
-                    <div className="sm:flex justify-around">
+                    <div className="sm:flex sm:justify-around w-3/4 m-auto">
                         <CompanyInfo/>
                         <Servise/>
                     </div>

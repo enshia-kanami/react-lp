@@ -11,17 +11,17 @@ const News = (props) => {
                             <li className="ml-6">
                                 <h4><Link to="/newsdetail" className="text-xl font-medium">{props.title1}</Link></h4>
                                 <p className="py-2">{props.text1}</p>
-                                <p>{props.date1}</p>
+                                <p className="text-sky-400">{props.date1}</p>
                             </li>
                             <li className="ml-6">
                                 <h4 className="pt-7"><Link to="/newsdetail" className="text-xl font-medium">{props.title2}</Link></h4>
                                 <p className="py-2">{props.text2}</p>
-                                <p>{props.date2}</p>
+                                <p className="text-sky-400">{props.date2}</p>
                             </li>
                             <li className="ml-6">
                                 <h4 className="pt-7"><Link to="/newsdetail" className="text-xl font-medium">{props.title3}</Link></h4>
                                 <p className="py-2">{props.text3}</p>
-                                <p>{props.date3}</p>
+                                <p className="text-sky-400">{props.date3}</p>
                             </li>
                         </ul>
                 </div>
